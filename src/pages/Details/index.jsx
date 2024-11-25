@@ -1,16 +1,26 @@
-import { Container } from "./styles"
-import { Button } from "../../components/button"
+import { Container, Links } from './styles'
+
+import { Header } from '../../components/Header'
+import { Button } from '../../components/Button'
+import { Section } from '../../components/Section'
 
 export function Details() {
   return (
     <Container>
-      <h1>Hello World!</h1>
-      <span>Rodrigo Gonçalves</span>
+      <Header />
 
-      <Button title="Login" loading/>
-      <Button title="Entrar"/>
-      <Button title="Cadastrar"/>
-      <Button title="Voltar"/>      
+      <Section title="Links úteis">
+        <Links>
+          <li>
+            <a href="#">https://rocketseat.com.br</a>
+          </li>
+          <li>
+            <a href="#">https://rocketseat.com.br</a>
+          </li>
+        </Links>
+      </Section>
+
+      <Button title="Voltar" />
     </Container>
   )
 }
