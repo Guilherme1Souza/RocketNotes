@@ -3,7 +3,7 @@ import { Container } from "./style";
 export function ButtonText({title, isActive = false,  ...rest}){
     return (
         <Container
-        type="button" isActive = {isActive}
+        type="button" $isactive = {isActive.toString()}
         {...rest}>
        
         {title}
