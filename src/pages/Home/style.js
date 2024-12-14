@@ -61,5 +61,17 @@ export const Content = styled.div`
 
 export const NewNote = styled.div`
  grid-area: newnote;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 
+ border: none;
+
+ background-color: ${({theme}) => theme.COLORS.ORANGE};
+ color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+ 
+
+ > svg {
+   margin-right: 8px;
+ }
  `;
