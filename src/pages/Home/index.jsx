@@ -3,6 +3,8 @@ import { Container, Brand, Menu, Search, Content, NewNote } from './style'
 
 
 import { Header } from '../../components/Header'
+import { Section } from '../../components/Section'
+import { Note } from '../../components/Note'
 import { ButtonText } from '../../components/ButtonText'
 import { Input } from '../../components/Input'
 
@@ -19,8 +21,8 @@ export function Home(){
             </Header>
 
             <Menu>
-            <li><ButtonText title="Todos" isActive/></li>
-            <li><ButtonText title="React"/></li>
+            <li><ButtonText title="Todos"/></li>
+            <li><ButtonText title="React" $isactive/></li>
             <li><ButtonText title="NodeJs"/></li>
             </Menu>
 
@@ -32,6 +34,16 @@ export function Home(){
 
             <Content>
 
+            <Section title="Minhas notas">
+            <Note data={{
+                title: 'React', 
+                tags: [
+                    {id: '1', name:'React'},
+                    {id: '2', name: 'NextJs'},
+                ]
+                    }}
+                    />
+            </Section>
             </Content>
 
             <NewNote>
