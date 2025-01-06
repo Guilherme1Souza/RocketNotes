@@ -1,5 +1,5 @@
 import { Container } from './style';
-import { Tag } from '../Tag'
+import { Tag } from '../Tag';
 
 //Utilizando o data para conseguir passar múltiplos valores relacionados para o componente NOTE
 export function Note({data, ...rest}){

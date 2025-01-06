@@ -16,7 +16,9 @@ export function Header() {
                 </div>
             </Profile>
             <Logout>
+                <a href="/signUp">
                 <RiShutDownLine />
+                </a>
             </Logout>
         </Container>
     );

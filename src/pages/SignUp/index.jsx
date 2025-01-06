@@ -3,9 +3,12 @@ import { Background, Container, Form } from "./style";
 import { FiMail, FiLock, FiUser } from "react-icons/fi"; 
 
 import { Input } from "../../components/Input";
-import { Button } from "../../components/button";
+
+import { Button } from "../../components/button"
 
 export function SignUp(){
+
+
     return (
         <Container>
              <Background/>
@@ -32,11 +35,13 @@ export function SignUp(){
                     icon={FiLock}
                 />
 
+                <a href="">
                 <Button title="Cadastrar"></Button>
+                </a>
 
-                <a href="#">Voltar para o login</a>
+                <a className="Quit" href="/signIn">Voltar para o login</a>
             </Form>
-           
         </Container>
     )
-}
+};
+

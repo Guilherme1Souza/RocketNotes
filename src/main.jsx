@@ -1,7 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { Home } from './pages/Home';
-import { Profile } from './pages/Profile';
+import { App } from './app'; 
 
 import { ThemeProvider } from 'styled-components';
 import  GlobalStyles from './styles/global';
@@ -12,7 +11,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles/>
-    <Profile/>
+    <App/>
     </ThemeProvider>
   </StrictMode>,
 )
