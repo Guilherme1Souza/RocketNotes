@@ -6,6 +6,8 @@ import { Input } from "../../components/Input";
 
 import { Button } from "../../components/button"
 
+import { Link } from "react-router-dom";
+
 export function SignUp(){
 
 
@@ -35,11 +37,11 @@ export function SignUp(){
                     icon={FiLock}
                 />
 
-                <a href="">
+                <Link to="/">
                 <Button title="Cadastrar"></Button>
-                </a>
+                </Link>
 
-                <a className="Quit" href="/signIn">Voltar para o login</a>
+                <Link className="Quit" to="/">Voltar para o login</Link>
             </Form>
         </Container>
     )
